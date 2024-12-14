@@ -28,10 +28,14 @@ const addItem = (e) => {
     }
     else if (value !== "" && editMode) {
         editItem.innerHTML = value;
-        updateLocalStorage(addItemId, value);
+        updateLocalStorage(editItemId, value);
         showAlert("Eleman Guncellendi", "success");
         setToDefault();
-    };
+    }
+    else {
+        showAlert("Lutfen eleman giriniz", "danger");
+    }
+    clearButton.style.display = "block";
 };
 //  * uyari veren fonksiyon
 const showAlert = (text, action) => {
