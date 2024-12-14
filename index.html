@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud-app</title>
+    <!--* CSS LINK-->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!--* font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--* container-->
+    <div class="container">
+      <!--* Form-->
+      <form class="form-wrapper">
+        <p class="alert"></p>
+        <h2>Crup App</h2>
+        <div class="input-container">
+          <input type="text" placeholder="Yeni eleman giriniz..." id="input" />
+          <button type="submit" class="submit-btn">Ekle</button>
+        </div>
+      </form>
+      <!--* elemanlar-->
+      <div class="items-wrapper">
+        <div class="item-list">
+          <!-- <div class="items-list-item">
+            <p class="item-name">Item</p>
+            <div class="btn-container">
+              <button class="edit-btn">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+              <button class="delete-btn">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!--* reset butonu-->
+      <button class="clear-btn">clear list</button>
+    </div>
+
+    <!--* js Baglanti-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
